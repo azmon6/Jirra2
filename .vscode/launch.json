@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost/Jirra2",
+            "url": "http://localhost/Jirra2/dashboard.php",
             "webRoot": "${workspaceFolder}"
         }
     ]

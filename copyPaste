@@ -1,0 +1,61 @@
+<head>
+    <title>Jirra2</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="testing.js"></script>
+</head>
+
+<body>
+    <div>
+        <?php
+        include "navbar.php";
+        echo createHeader();
+        ?>
+    </div>
+    <div >
+
+    </div>
+    <div>
+
+    </div>
+</body>
+
+
+//
+
+<?php
+    $id = 0;
+    if (isset($_GET['id']))
+    {
+        $id = intval($_GET['id']);
+    }
+    echo $id;
+?>
+
+//
+
+basename($_SERVER['REQUEST_URI']);
+
+
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+    <node CREATED="1644748944310" ID="ID_1969022800" MODIFIED="1644879763966" TEXT="New Mindmap">
+        <node CREATED="1644879770177" ID="ID_891615636" MODIFIED="1644879779250" POSITION="right" TEXT="TestChild">
+            <node CREATED="1644879911881" ID="ID_651372547" MODIFIED="1644879915601" TEXT="Child1">
+                <node CREATED="1644879923329" ID="ID_1704455388" MODIFIED="1644879926436" TEXT="Child11"/>
+                <node CREATED="1644879928887" ID="ID_1160971961" MODIFIED="1644879930802" TEXT="Child12"/>
+            </node>
+            <node CREATED="1644879918276" ID="ID_1410091068" MODIFIED="1644879920600" TEXT="Child2">
+                <node CREATED="1644879933137" ID="ID_1240878456" MODIFIED="1644879936943" TEXT="Child21"/>
+                <node CREATED="1644879939285" ID="ID_262443139" MODIFIED="1644879941611" TEXT="Child22"/>
+            </node>
+        </node>
+        <node CREATED="1644879783724" ID="ID_1796466954" MODIFIED="1644879787525" POSITION="right" TEXT="TestSibling">
+        <node CREATED="1644879793272" ID="ID_1751934448" MODIFIED="1644879796497" TEXT="Sibling1"/>
+        <node CREATED="1644879800205" ID="ID_560756650" MODIFIED="1644879802796" TEXT="Sibling2"/>
+        </node>
+        <node CREATED="1644879834513" ID="ID_813721923" MODIFIED="1644879839698" POSITION="left" TEXT="PrevNode2"/>
+        <node CREATED="1644879809925" ID="ID_1823057105" MODIFIED="1644879815747" POSITION="left" TEXT="PrevNode">
+        <node CREATED="1644879842506" ID="ID_600517668" MODIFIED="1644879852712" TEXT="PrevNodeChild"/>
+        </node>
+    </node>
+</map>

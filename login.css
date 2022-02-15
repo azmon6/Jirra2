@@ -1,0 +1,11 @@
+.loginPanel {
+    display: inline-block;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.loginPanel > form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}

@@ -14,27 +14,36 @@ function CloseCon($conn)
  {
  $conn -> close();
  }
-   
-function TestCon($conn)
-{
-    if (isset($_POST["submit"]))
-    {
- 
-        $sql = "INSERT INTO test (q,w,e,r) VALUES (1,2,3,4)";
-        mysqli_query($conn, $sql);
- 
-        echo "<p>Invoice has been added.</p>";
-    }
-}
 
-function GetData($conn)
-{
-    $sql = "SELECT q,w,e,r FROM test";
-    $result = $conn->query($sql);
 
-    while($row = $result->fetch_assoc()) {
-        echo "<div>id: " . $row["q"]. " - Name: " . $row["w"]. " " . $row["e"]. "</div><br>";
+ function GetUserIDFromUsername($conn, $name)
+ {
+  $sql2 = "SELECT UserID from user WHERE Username = \"".$name."\"";
+  $result = mysqli_query($conn, $sql2);
+  $userID = 0;
+  if ($result->num_rows > 0) {
+      while ($row = $result->fetch_assoc()) {
+          $userID = $row["UserID"];
+          return $userID;
       }
-}
+  } else {
+      echo "Problem retrieving user from username";
+  }
+  return 0;
+ }
 
-?>
+ function GetProjecIDFromName($conn, $name)
+ {
+  $sql2 = "SELECT ProjectID from project WHERE ProjectName = \"".$name."\"";
+  $result = mysqli_query($conn, $sql2) or die("could not find Username");
+  $userID = 0;
+  if ($result->num_rows > 0) {
+      while ($row = $result->fetch_assoc()) {
+          $userID = $row["ProjectID"];
+          return $userID;
+      }
+  } else {
+      echo "Problem retrieving projectID from projectname";
+  }
+  return 0;
+ }

@@ -1,3 +1,127 @@
-div {
-    background-color: red;
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #f4f5f7;
+}
+
+ul {
+    list-style-type:none;
+}
+
+textarea {
+    resize: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active 
+{
+    text-decoration: none;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainerAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    color: red;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #9a0dfe, #637dfb);
+    font-size: 20px;
+}
+
+.home-link {
+    font-size: 24px;
+    color: white;
+    margin: 5px 5px 5px 30px;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly  ;
+    align-items: center;
+    width: 500px;
+}
+
+.navbar-links > li > a{
+    color: white;
+}
+
+.titleheader {
+    background-color: #333;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.titleheader > a,
+.titleheader > h2 {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    display:inline-block;
+}
+
+.titleheader > h2 {
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.projectPanel {
+    width: 50%;
+    margin:20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.description {
+    background-color: #f5f5f5;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.description > p {
+    margin: 10px;
+}
+
+.button {
+    margin: 5px 5px 10px 5px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #344563;
+    background-color: rgba(9,30,66,0.08);
+    display: inline-block;
+}
+
+.projectDate,
+.projectStatus,
+.projectUsers {
+    margin: 5px;
+}
+
+.footing {
+    height: 100px;
+}
+
+.issueBubble {
+    border: 1px solid red;
 }
