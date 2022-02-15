@@ -74,6 +74,9 @@ CloseCon($conn);
             <div>
                 <a class="button" href="<?php echo "editissue.php" ?>">Create Issue</a>
             </div>
+            <div>
+                <a class="button" href="<?php echo "deleteproject.php?id=".$id; ?>">Delete Project</a>
+            </div>
             <div class="issueBubble">
                 Open Issues
                 <?php

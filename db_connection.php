@@ -1,9 +1,14 @@
 <?php
 function OpenCon()
  {
+ // Change dbhost to where you want the host to be
+ // Change dbuser to your username of server
+ // Change dbpass to your password of server
+ // Change db to your database name, default is practice
+ 
  $dbhost = "localhost";
  $dbuser = "root";
- $dbpass = "pesho123";
+ $dbpass = "";
  $db = "practice";
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
  
