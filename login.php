@@ -46,7 +46,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
         <div class="loginPanel">
-                <form method="post">
+                <div class = "login-header">
+                    Log In
+                </div>
+                <form class="login-containter" method="post">
                         <label>Username:</label>
                         <input type="text" name="username" placeholder="Username" />
                         <label>Password:</label>

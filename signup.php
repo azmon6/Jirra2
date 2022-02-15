@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($usernameErr == "") {
         $conn = OpenCon();
-        $sql = 'SELECT * FROM user WHERE Username = "' . $_POST["username"].'"';
+        $sql = 'SELECT * FROM user WHERE Username = "' . $_POST["username"] . '"';
         $result = mysqli_query($conn, $sql);
         if ($result->num_rows > 0) {
             $usernameErr = "Username already exists.";
@@ -36,6 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </div>
     <div class="loginPanel">
+        <div class="login-header">
+            Sign Up
+        </div>
         <form method="post">
             <label>Username:</label>
             <input type="text" name="username" placeholder="Username" />
